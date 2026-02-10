@@ -1,41 +1,46 @@
 @charset "UTF-8";
 
+
+/* Used lecture lesson git for reference in making my grid layout*/
+
 html {
     box-sizing: border-box;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
 
 body {
-    
+
     background: linear-gradient(rgba(255, 255, 255, 0.60), rgba(255, 255, 255, 0.60)), url("../images/background.jpg");
     /* referenced this site to learn how to make background image transparent: https://stackoverflow.com/questions/62033155/how-to-add-transparency-to-a-background-image-html-css */
     /* image reference: https://www.istockphoto.com/photo/yellow-stained-paper-old-retro-letter-texture-parchment-paper-background-gm1478701647-506897174 */
 
-    background-size: cover;
+    background-size: cover; /*to make image cover background instead of title*/
     background-color: rgb(252, 235, 210);
-  
+
 
 }
 
-/* Used lecture lesson git for reference in making my grid layout*/
 #container {
 
     display: grid;
-    
 
-    grid-template-areas: 
-    "header header header"
-    "main main section"
-    "aside aside aside";
+
+    grid-template-areas:
+        "header header header"
+        "main main section"
+        "aside aside aside";
 
     width: 80%;
     margin: 0 auto;
     grid-template-rows: auto auto auto;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1.5rem;
-    
+
 }
 
 header {
@@ -45,10 +50,7 @@ header {
     margin-top: 1rem;
     border-radius: 100px;
     text-align: center;
-  
-   
-   
-   
+
 
 }
 
@@ -58,19 +60,20 @@ header h1 {
     font-style: normal;
     font-size: 4rem;
     color: bisque;
-    
+
 
 
 }
 
 header h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
-   
+
 
 }
 
-h2, p {
-    color : rgb(82, 0, 0);
+h2,
+p {
+    color: rgb(82, 0, 0);
 }
 
 h3 {
@@ -78,12 +81,13 @@ h3 {
     font-weight: 100;
     font-style: normal;
     font-size: 2rem;
-    color: rgb(207, 62, 0);;
+    color: rgb(207, 62, 0);
+    ;
 
 }
 
 
-p{
+p {
     line-height: 1.5;
     font-size: 1.2rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -94,9 +98,8 @@ main {
     background-color: rgba(255, 255, 255, 0.74);
     padding: 2rem;
     border-radius: 20px;
-    
-    
-    
+
+
 }
 
 
@@ -118,25 +121,17 @@ aside {
     padding: 2rem;
     border-radius: 20px;
     margin-bottom: 1rem;
-   
-
-}
-
-.artist-title {
-    display: flex; 
-   text-align: center;
+    display: flex;              /* using flex to easily center content */
     flex-direction: column;
     align-items: center;
+
+
 }
-    
+
+
 .artist-image {
     width: 300px;
     height: auto;
     border-radius: 20px;
-    
+
 }
-
-
-
-
-
