@@ -14,11 +14,12 @@ body {
     /* image reference: https://www.istockphoto.com/photo/yellow-stained-paper-old-retro-letter-texture-parchment-paper-background-gm1478701647-506897174 */
 
     background-size: cover;
-    background-color: rgb(252, 235, 210)
+    background-color: rgb(252, 235, 210);
   
 
 }
 
+/* Used lecture lesson git for reference in making my grid layout*/
 #container {
 
     display: grid;
@@ -34,42 +35,87 @@ body {
     grid-template-rows: auto auto auto;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
+    
 }
 
 header {
     grid-area: header;
     background-color: rgba(207, 62, 0, 0.74);
-    text-align: center;
     padding: 1rem;
     margin-top: 1rem;
     border-radius: 100px;
+    text-align: center;
+  
+   
+   
+   
+
 }
 
 header h1 {
-    font-family: 'Georgia', serif;
-    color: white;
-    font-size: 3rem;
+    font-family: "Monoton", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 4rem;
+    color: bisque;
+    
+
+
 }
 
+header h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   
+
+}
+
+h2, p {
+    color : rgb(82, 0, 0);
+}
+
+h3 {
+    font-family: "Monoton", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 2rem;
+    color: rgb(207, 62, 0);;
+
+}
+
+
+p{
+    line-height: 1.5;
+    font-size: 1.2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 
 main {
     grid-area: main;
     background-color: rgba(255, 255, 255, 0.74);
-    padding: 1rem;
+    padding: 2rem;
     border-radius: 20px;
+    
+    
+    
 }
+
+
+
+
+
+
 
 section {
     grid-area: section;
     background-color: rgba(255, 255, 255, 0.74);
-    padding: 1rem;
+    padding: 2rem;
     border-radius: 20px;
 }
 
 aside {
     grid-area: aside;
     background-color: rgba(255, 255, 255, 0.74);
-    padding: 1rem;
+    padding: 2rem;
     border-radius: 20px;
     margin-bottom: 1rem;
 }
