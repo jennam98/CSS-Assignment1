@@ -7,4 +7,18 @@ html {
     box-sizing: inherit;
 }
 
-body
+body {
+    
+    background: linear-gradient(rgba(255, 255, 255, 0.60), rgba(255, 255, 255, 0.60)), url("../images/background.jpg");
+    /* referenced this site to learn how to make background image transparent: https://stackoverflow.com/questions/62033155/how-to-add-transparency-to-a-background-image-html-css */
+    /* image reference: https://www.istockphoto.com/photo/yellow-stained-paper-old-retro-letter-texture-parchment-paper-background-gm1478701647-506897174 */
+
+    background-size: cover;
+    background-color: rgb(252, 235, 210)
+  
+
+}
+
+
+
+
